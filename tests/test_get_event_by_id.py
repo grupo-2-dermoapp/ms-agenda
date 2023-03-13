@@ -1,4 +1,4 @@
-def get_event_with_bad_id(client):
+def test_get_event_with_bad_id(client):
     uuid_test = 'test'
     response = client.get("/dermoapp/agenda/v1/events/{}".format(uuid_test))
     data = response.json
